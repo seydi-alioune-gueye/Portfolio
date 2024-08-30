@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/14273d579a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bienvenue dans mon univers</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header id="home">
+      <!--Début Naviguation-->
+
+      <button
+        class="btn buttonMenu position-fixed"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+      >
+        <i class="bi bi-gear-fill"></i>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start w-auto h-50 menu"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+        <div class="offcanvas-body">
+          <a href="#home" class="BarreNav">
+            <i class="bi bi-house-door icon"></i
+            ><span class="mx-2">Home</span></a
+          >
+          <a href="#quiSuisJe" class="BarreNav"
+            ><i class="bi bi-file-person-fill icon"></i
+            ><span class="mx-2">About</span>
+          </a>
+          <a href="#SavoirFaire" class="BarreNav"
+            ><i class="bi bi-laptop icon"></i><span class="mx-2">Skills</span>
+          </a>
+          <a href="#Realisations" class="BarreNav"
+            ><i class="bi bi-cpu icon"></i><span class="mx-2">Projets</span>
+          </a>
+          <a href="#Contact" class="BarreNav"
+            ><i class="bi bi-person-lines-fill icon"></i
+            ><span class="mx-2">Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <!--Fin Naviguation-->
+
+      <!--Début Profil-->
+      <div class="container my-2">
+        <div class="row nav">
+          <div class="offset-0 col-12 mx-auto offset-lg-4 profil">
+            <img src="../images/profil.png" class="img-fluid" alt="profil" />
+            <h5>Alioune GUEYE</h5>
+            <h6 class="fs-6 fs-lg-5 mx-1 mx-lg-0 text-center">
+              Développeur Web 🌐 Mobile 📱 Logiciel 💻
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <!--Début Profil-->
+    </header>
+    <main>
+      <section>
+        <div id="carouselExampleIndicators" class="container carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../images/Capture d’écran (41).png"
+                class="d-block w-100 img-fluid Imagescarousel"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../images/illustration.png"
+                class="d-block w-100 img-fluid Imagescarousel"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../images/Capture d’écran (44).png"
+                class="d-block w-100 img-fluid Imagescarousel"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section id="quiSuisJe">
+        <div class="container my-4">
+          <h2 class="quiSuisJe" data-aos="zoom-in-down">QUI SUIS - JE</h2>
+          <div class="row my-4">
+            <div
+              class="col-12 col-lg-6 about"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-easing="ease-in-out"
+            >
+              <p class="fs-6 fs-lg-5 introduction">
+                Bonjour, je me nomme Alioune Gueye, je suis actuellement
+                étudiant en licence 3 Informatique à l'<a
+                  href="https://www.uha.fr/fr/index.html"
+                  target="_blank"
+                >
+                  Université Haute-Alsace de Mulhouse</a
+                >. Passionné par la programmation Web, Mobile et Logicielle, je
+                me suis consacré à l'apprentissage de plusieurs technologies
+                afin de me préparer à toutes les éventualités au cours de mon
+                parcours scolaire et professionnel.
+              </p>
+              <p class="fs-6 fs-lg-5">
+                Aspirant à devenir Développeur Full-Stack, il est logique que je
+                me forme sur le Front-End, le Back-End, les Bases de Données, le
+                DevOps, les Outils de Développement, la Sécurité, et les API. À
+                travers cette démarche, j'ai développé des compétences que je
+                vais détailler plus précisément dans la suite afin d'atteindre
+                l'excellence.
+              </p>
+              <p class="fs-6 fs-lg-5 RV">
+                Je vous invite donc à consulter la rubrique
+                <a href="#SavoirFaire">SAVOIR-FAIRE</a> !
+              </p>
+            </div>
+            <div
+              class="col-12 col-lg-5 offset-lg-1 aboutphotoAbout"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-easing="ease-in-out"
+            >
+              <img
+                src="../images/6463428-removebg-preview.png"
+                class="img-fluid w-100 h-100"
+                alt="photoAbout"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="SavoirFaire">
+        <h2 class="quiSuisJe" data-aos="zoom-in-up">SAVOIR - FAIRE</h2>
+        <div class="container my-4">
+          <div class="row my-4">
+            <div
+              class="col-12 col-lg-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="row r1">
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-html-5-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-css-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-javascript-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-php-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="row my-4">
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-react-native-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-nœud-js-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-logo-java-coffee-cup-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-studio-android-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="row my-4">
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-c-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-programmation-en-c-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-mongo-db-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-mysql-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="row my-4">
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-figma-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-qt-50.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-bootstrap-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-logo-de-printemps-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="row my-4">
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-r-projet-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-powershell-ise-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-python-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="../images/icons8-git-48.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-6 offset-lg-1 savoir"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-easing="ease-in-out"
+            >
+              <p class="fs-6 fs-lg-5">
+                Comme vous pouvez le constater, grâce à ces compétences, j'ai
+                travaillé sur toutes les parties d'une application, de la
+                conception à la maintenance. Aujourd'hui, nous assistons à la
+                naissance de
+                <span class="enum">frameworks, de SASS, de ChatGPT, etc.,</span>
+                dans le but de simplifier le quotidien des développeurs.
+              </p>
+              <p class="fs-6 fs-lg-5">
+                Il faut noter qu'il est nécessaire d'être à l'aise avec des
+                langages de base comme HTML, CSS, JavaScript, etc., parmi tant
+                d'autres pour s'épanouir avec ces nouvelles avancées
+                technologiques.
+              </p>
+              <p class="fs-6 fs-lg-5">
+                Je m'explique, prenons l'exemple de
+                <span class="enum">Bootstrap</span> : pour pouvoir le manier, il
+                faut au moins avoir des bases en HTML et CSS. C'est également le
+                cas de JavaScript pour
+                <span class="enum">React, Node, et Vue</span>, ainsi que de Java
+                pour <span class="enum">Spring Boot</span>, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Realisations">
+        <h2 class="quiSuisJe" data-aos="zoom-in-up">REALISATIONS</h2>
+        <div class="container my-4">
+          <div class="row gy-4 my-5">
+            <div
+              class="col-12 col-sm-5 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-easing="ease-in-out"
+            >
+              <div
+                class="card mx-auto transform-none card1"
+                style="width: 15rem"
+              >
+                <img src="../images/1.png" class="card-img-top im4" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Base de Données</h5>
+                  <p class="card-text">
+                    Gestion des vacataires de l'Université Haute-Alsace
+                  </p>
+                  <a
+                    class="btn plus"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#projet1"
+                    >En savoir plus...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-5 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
+              <div
+                class="card mx-auto mx-sm-5 mx-lg-0 transform-none card2"
+                style="width: 15rem"
+              >
+                <img
+                  src="../images/Capture d’écran (45).png"
+                  class="card-img-top im1"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Site Web</h5>
+                  <p class="card-text">
+                    Gestion de l'Université Iba Der Thiam de Thiès
+                  </p>
+                  <a
+                    class="btn plus"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#projet2"
+                    >En savoir plus...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-5 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
+              <div
+                class="card mx-auto mx-lg-0 mx-xxl-0 card3"
+                style="width: 15rem"
+              >
+                <img
+                  src="../images/Capture d’écran (46).png"
+                  class="card-img-top im2"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Application</h5>
+                  <p class="card-text">
+                    Projet Algorithmique (Solutions mathématiques)
+                  </p>
+                  <a
+                    class="btn plus"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#projet3"
+                    >En savoir plus...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-5 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-easing="ease-in-out"
+            >
+              <div
+                class="card mx-auto mx-sm-5 mx-lg-4 mx-xl-0 mx-xxl-0 card4"
+                style="width: 15rem"
+              >
+                <img
+                  src="../images/Capture d’écran ptojet.png"
+                  class="card-img-top im3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Logiciel</h5>
+                  <p class="card-text">Gestion d'un réseau de Tramways</p>
+                  <a
+                    class="btn plus"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#projet4"
+                    >En savoir plus...</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--DébutProjet 1-->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="projet1"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title text-center" id="offcanvasRightLabel">
+              Gestion des vacataires de l'Université Haute-Alsace
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row gy-2">
+              <div class="col-xl-6">
+                <img
+                  src="../images/Capture d’écran (18).png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-6">
+                <img
+                  src="../images/Capture d’écran (36).png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="fonctionnalités col-12">
+                <p>
+                  Ce projet a donc pour objectif de concevoir une base de
+                  données permettant de :
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i> Réaliser les inscriptions
+                  des vacataires à travers une fiche de renseignement,
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i>
+                  Mettre à jour les informations des vacataires si nécessaire à
+                  l’aide d’un publipostage,
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i>
+                  Faire la gestion des paiements des vacataires durant les 4
+                  phases de paie,
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i> Faire la gestion des
+                  contrats
+                </p>
+              </div>
+            </div>
+            <div class="row tech">
+              <div class="col-12 fw-medium">
+                <i class="bi bi-info-circle-fill"></i>
+                Access, VBA, Canva, Zimbra, Diagramme de Gant, Word, Excel
+              </div>
+            </div>
+            <div class="row tech my-2">
+              <div class="col-12 fw-bold">
+                <i class="bi bi-cloud-download-fill"></i> Veuillez télécharger
+                le projet sur
+                <a
+                  href="https://github.com/seydi-alioune-gueye/Gestion-des-vacataires-de-l-Universite-Haute-Alsace"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FinProjet 1-->
+        <!--DébutProjet 2-->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="projet2"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title text-center" id="offcanvasRightLabel">
+              Gestion de l'Université Iba Der Thiam de Thiès
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row gy-2">
+              <div class="col-xl-6">
+                <img
+                  src="../images/Capture d’écran (100).png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-6">
+                <img
+                  src="../images/Capture d’écran (101).png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="fonctionnalités col-12">
+                <p>
+                  Ce projet a donc pour objectif de concevoir un site Web
+                  permettant de :
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i> Réaliser les inscriptions
+                  des étudiants,
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i>
+                  Gérer l'administration ainsi que le campus social(attribution
+                  des tickets de restaurants,logement,...)
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i>
+                  Faire la gestion des cours (Emploi du temps, Profs,...)
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i> Faire la gestion des
+                  notes(Délibération,réclamation,...)
+                </p>
+              </div>
+            </div>
+            <div class="row tech">
+              <div class="col-12 fw-medium">
+                <i class="bi bi-info-circle-fill"></i>
+                HTML, CSS, JavaScript, Visual Studio Code
+              </div>
+            </div>
+            <div class="row tech my-2">
+              <div class="col-12 fw-bold">
+                <a
+                  href="https://github.com/seydi-alioune-gueye/Mon-Site"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+                Veuillez visiter le site sur
+                <a
+                  href="https://seydi-alioune-gueye.github.io/Mon-Site/Projet%20DEV-WEB/HTML/#"
+                  target="_blank"
+                  ><i class="bi bi-globe"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FinProjet 2-->
+        <!--DébutProjet 3-->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="projet3"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title text-center" id="offcanvasRightLabel">
+              Projet Algorithmique (Solutions mathématiques)
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row gy-2">
+              <div class="col-xl-6">
+                <img
+                  src="../images/Capture d’écran (49).png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-6">
+                <img
+                  src="../images/Capture d’écran (103).png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="fonctionnalités col-12">
+                <p>
+                  Ce projet a donc pour objectif de concevoir une application
+                  permettant de :
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i> Calculer la superfiçie d'un
+                  polygone quelconque,
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i>
+                  Calculer le PGDC de deux nombres
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i>
+                  Calculer la valeur d'une fonction (y=f(x)) à partir d'un
+                  paramètre x donné
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i>Déterminer les diviseurs d'un
+                  nombre quelconque
+                </p>
+              </div>
+            </div>
+            <div class="row tech">
+              <div class="col-12 fw-medium">
+                <i class="bi bi-info-circle-fill"></i>
+                Code::Blocks,C,CMD
+              </div>
+            </div>
+            <div class="row tech my-2">
+              <div class="col-12 fw-bold">
+                <i class="bi bi-cloud-download-fill"></i> Veuillez télécharger
+                le projet sur
+                <a
+                  href="https://github.com/seydi-alioune-gueye/Mini-Application"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FinProjet 3-->
+        <!--DébutProjet 4-->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="projet4"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title text-center" id="offcanvasRightLabel">
+              Gestion d'un réseau de Tramways
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row gy-2">
+              <div class="col-12">
+                <img
+                  src="../images/Capture d’écran ptojet.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="fonctionnalités col-12">
+                <p>
+                  Ce projet a donc pour objectif de concevoir un logiciel
+                  permettant de :
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i> Simuler un réseau de
+                  Tramways,
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i>
+                  Faire circuler plusieurs Tramways sur plusieurs lignes
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i>
+                  Fixer une vitesse précise pour chaque Tramway afin d'éviter
+                  les coulisions
+                </p>
+                <p>
+                  <i class="bi bi-puzzle-fill"></i>Réprésenter des arrêts réels
+                </p>
+              </div>
+            </div>
+            <div class="row tech">
+              <div class="col-12 fw-medium">
+                <i class="bi bi-info-circle-fill"></i>
+                Code::Blocks,C++,Qt Creator,XML,CMD
+              </div>
+            </div>
+            <div class="row tech my-2">
+              <div class="col-12 fw-bold">
+                <i class="bi bi-cloud-download-fill"></i> Veuillez télécharger
+                le projet sur
+                <a
+                  href="https://github.com/seydi-alioune-gueye/Gestion-reseau-de-Tramway"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FinProjet 4-->
+      </section>
+    </main>
+    <footer id="Contact">
+      <div class="container h-100">
+        <div class="row">
+          <div class="col-12 col-lg-6 offset-lg-6">
+            <div class="row coordonnées1">
+              <div
+                class="col-3 my-5 Contact"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-easing="ease-in-out"
+              >
+                Contact
+              </div>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-easing="ease-in-out"
+              >
+                Je serais ravi de collaborer avec vous afin de relever de
+                nouveaux défis et de monter en compétences et en expérience. À
+                bientôt <i class="bi bi-emoji-smile-fill"></i>
+              </p>
+              <div
+                class="col-4 my-3 cv"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-easing="ease-in-out"
+              >
+                <span id="send">Téléchargez mon CV</span>
+                <button class="buttonCv w-10 mx-3">
+                  <a
+                    class="ClickHere"
+                    href="https://drive.google.com/file/d/1mCxTptTegeZ3N5ALPO1_6xfMZ-DFrmBD/view?usp=drive_link"
+                    target="_blank"
+                    >Click here !</a
+                  >
+                </button>
+              </div>
+              <div
+                class="col-4 coordonnées2 my-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-easing="ease-in-out"
+              >
+                <p class="fs-6 fs-lg-5">
+                  <i class="bi bi-phone-fill"></i> Téléphone : 07 57 54 81 25
+                </p>
+                <p class="fs-6 fs-lg-5">
+                  <i class="bi bi-envelope"></i> Mail : aliounepape70@gmail.com
+                </p>
+                <p class="fs-6 fs-lg-5">
+                  <i class="bi bi-geo-fill"></i>
+                  Adresse : 11 Rue, des Frères Lumière 68350 Brunstatt-Didenheim
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row all my-4 h-10">
+          <div
+            class="col-12 col-lg-9 my-4 fs-6 fs-lg-5 text-center text-lg-start"
+          >
+            © Alioune GUEYE 2024 | All rights reserved.
+          </div>
+          <div class="col-12 col-lg-3 my-lg-4 link">
+            <a href="https://github.com/seydi-alioune-gueye" target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/alioune-gueye-6427ab223/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="mailto:aliounepape70@gmail.com"
+              ><i class="bi bi-envelope"></i
+            ></a>
+
+            <a href="https://discord.com/channels/@me" target="_blank"
+              ><i class="bi bi-discord"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <script src="../JavaScript/cursor.js" defer></script>
+  </body>
+</html>

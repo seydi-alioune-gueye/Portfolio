@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*::selection {
+  background-color: thistle;
+  opacity: 0.8;
+}
+::-webkit-scrollbar-thumb {
+  background: #ee6c4d;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+body {
+  background-color: #293241;
+  color: white;
+}
+
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #ee6c4d;
+}
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ee6c4d;
+}
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.profil img {
+  background-color: #ee6c4d;
+  height: 15vh;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.profil {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonMenu {
+  background-color: #ee6c4d;
+  z-index: 1;
+  opacity: 0.8;
+}
+.menu {
+  color: #ee6c4d;
+  background-color: #293241;
+}
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.BarreNav {
+  color: #ee6c4d;
+  text-decoration: none;
+}
+.BarreNav:hover {
+  color: #ee6c4d;
+}
+.icon {
+  color: white;
+}
+
+.btn-close {
+  background-color: #ee6c4d;
+}
+.about,
+.savoir {
+  text-align: justify;
+  font-family: sans-serif;
+  line-height: 35px;
+}
+
+.Imagescarousel {
+  filter: brightness(0.8);
+}
+
+.quiSuisJe {
+  text-align: center;
+  font-family: "Fruktur", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #ee6c4d;
+}
+
+.introduction > a {
+  color: #ee6c4d;
+  text-decoration: none;
+}
+.RV > a {
+  color: #ee6c4d;
+  text-decoration: none;
+}
+.card1,
+.card3 {
+  color: black;
+  transform: rotate(3deg);
+}
+.card2,
+.card4 {
+  color: black;
+  transform: rotate(-3deg);
+}
+.im1,
+.im2,
+.im3,
+.im4 {
+  height: 25vh;
+}
+
+.plus {
+  background-color: #ee6c4d;
+}
+
+.coordonnées1 {
+  display: flex;
+  flex-direction: column;
+}
+.coordonnées2 {
+  height: 25vh;
+  width: inherit;
+}
+.bi-phone-fill,
+.bi-envelope,
+.bi-geo-fill,
+.bi-github,
+.bi-linkedin,
+.bi-discord,
+.bi-puzzle-fill,
+.bi-info-circle-fill,
+.bi-cloud-download-fill,
+.bi-globe,
+.enum,
+.bi-emoji-smile-fill {
+  color: #ee6c4d;
+}
+.Contact {
+  font-family: "Fruktur", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #ee6c4d;
+  font-size: 35px;
+}
+
+.cv {
+  width: inherit;
+}
+.buttonCv {
+  border: 1px dashed #293241;
+  background-color: #ee6c4d;
+  width: inherit;
+}
+.ClickHere {
+  color: #293241;
+  text-decoration: none;
+}
+.ClickHere:hover {
+  color: white;
+}
+.all {
+  border-top: 2px solid #ee6c4d;
+}
+
+.link {
+  display: flex;
+  justify-content: space-around;
+}
+.offcanvas-title,
+.fonctionnalités,
+.tech {
+  color: #293241;
+}
+
+#home,
+#quiSuisJe,
+#SavoirFaire,
+#Realisations,
+#Contact {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none !important;
+  }
+}
