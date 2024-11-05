@@ -121,7 +121,8 @@ body {
 .im1,
 .im2,
 .im3,
-.im4 {
+.im4,
+.im5 {
   height: 25vh;
 }
 
@@ -143,8 +144,7 @@ body {
 .bi-github,
 .bi-linkedin,
 .bi-discord,
-.bi-puzzle-fill,
-.bi-info-circle-fill,
+.bi-file-earmark-code-fill,
 .bi-cloud-download-fill,
 .bi-globe,
 .enum,
@@ -201,4 +201,8 @@ body {
   .cursor-outline {
     display: none !important;
   }
+}
+.rounded {
+  background-color: #ee6c4d;
+  color: #293241;
 }
