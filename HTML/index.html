@@ -1,39 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alioune Gueye - Étudiant en Master 1 Informatique | Développeur Full-Stack passionné par le Web, le Mobile et le Logiciel." />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="../CSS/index.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/14273d579a.js"
-      crossorigin="anonymous"
-    ></script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -45,10 +27,9 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-JM5MXC6EH8");
     </script>
-    <title>Bienvenue dans mon univers</title>
+    <title>Alioune GUEYE | Développeur Full-Stack</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -67,568 +48,687 @@
       href="../favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="../favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="../favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#0f172a" />
   </head>
   <body>
-    <header id="home">
-      <!--Début Naviguation-->
 
-      <button
-        class="btn buttonMenu position-fixed"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasWithBothOptions"
-        aria-controls="offcanvasWithBothOptions"
-      >
-        <i class="bi bi-gear-fill"></i>
-      </button>
-
-      <div
-        class="offcanvas offcanvas-start w-auto h-50 menu"
-        data-bs-scroll="true"
-        tabindex="-1"
-        id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel"
-      >
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-custom" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <span class="navbar-brand-text">&lt;AG /&gt;</span>
+        </a>
         <button
+          class="navbar-toggler"
           type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-        <div class="offcanvas-body">
-          <a href="#home" class="BarreNav">
-            <i class="bi bi-house-door icon"></i
-            ><span class="mx-2">Home</span></a
-          >
-          <a href="#quiSuisJe" class="BarreNav"
-            ><i class="bi bi-file-person-fill icon"></i
-            ><span class="mx-2">About</span>
-          </a>
-          <a href="#SavoirFaire" class="BarreNav"
-            ><i class="bi bi-laptop icon"></i><span class="mx-2">Skills</span>
-          </a>
-          <a href="#Realisations" class="BarreNav"
-            ><i class="bi bi-cpu icon"></i><span class="mx-2">Projets</span>
-          </a>
-          <a href="#Contact" class="BarreNav"
-            ><i class="bi bi-person-lines-fill icon"></i
-            ><span class="mx-2">Contact</span>
-          </a>
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-1">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quiSuisJe">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Parcours">Parcours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#SavoirFaire">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Experience">Expérience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Realisations">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
 
-      <!--Fin Naviguation-->
-
-      <!--Début Profil-->
-      <div class="container my-2">
-        <div class="row nav">
-          <div class="offset-0 col-12 mx-auto offset-lg-4 profil">
-            <img src="../images/profil.png" class="img-fluid" alt="profil" />
-            <h5>Alioune GUEYE</h5>
-            <h6 class="fs-6 fs-lg-5 mx-1 mx-lg-0 text-center">
-              Développeur Web 🌐 Mobile 📱 Logiciel 💻
-            </h6>
-          </div>
-        </div>
-      </div>
-
-      <!--Début Profil-->
-    </header>
-    <main>
-      <section>
-        <div id="carouselExampleIndicators" class="container carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="../images/Capture d’écran (41).png"
-                class="d-block w-100 img-fluid Imagescarousel"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../images/illustration.png"
-                class="d-block w-100 img-fluid Imagescarousel"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../images/Capture d’écran (44).png"
-                class="d-block w-100 img-fluid Imagescarousel"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <section id="quiSuisJe">
-        <div class="container my-4">
-          <h2 class="quiSuisJe" data-aos="zoom-in-down">QUI SUIS - JE</h2>
-          <div class="row my-4">
-            <div
-              class="col-12 col-lg-6 about"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-easing="ease-in-out"
+    <!-- ===== HERO SECTION ===== -->
+    <header id="home">
+      <div class="container">
+        <div class="hero-content">
+          <img
+            src="../images/profil.png"
+            class="hero-avatar"
+            alt="Alioune Gueye"
+          />
+          <div class="hero-badge">Étudiant en Master 1 Informatique | Disponible pour un stage et une alternance</div>
+          <h1 class="hero-name">
+            Bonjour, je suis <span class="accent">Alioune GUEYE</span>
+          </h1>
+          <p class="hero-role">
+            <span class="typing-text" id="typingText"></span>
+          </p>
+          <div class="hero-buttons">
+            <a
+              href="https://drive.google.com/file/d/113L99k-mcUeNcWFI_iPa3IVIEW3epdU9/view?usp=sharing"
+              target="_blank"
+              class="btn-primary-custom"
             >
-              <p class="fs-6 fs-lg-5 introduction">
-                Bonjour, je me nomme Alioune Gueye, je suis actuellement
-                étudiant en licence 3 Informatique à l'<a
-                  href="https://www.uha.fr/fr/index.html"
-                  target="_blank"
-                >
-                  Université Haute-Alsace de Mulhouse</a
-                >. Passionné par la programmation Web, Mobile et Logicielle, je
-                me suis consacré à l'apprentissage de plusieurs technologies
-                afin de me préparer à toutes les éventualités au cours de mon
-                parcours scolaire et professionnel.
-              </p>
-              <p class="fs-6 fs-lg-5">
-                Aspirant à devenir Développeur Full-Stack, il est logique que je
-                me forme sur le Front-End, le Back-End, les Bases de Données, le
-                DevOps, les Outils de Développement, la Sécurité, et les API. À
-                travers cette démarche, j'ai développé des compétences que je
-                vais détailler plus précisément dans la suite afin d'atteindre
-                l'excellence.
-              </p>
-              <p class="fs-6 fs-lg-5 RV">
-                Je vous invite donc à consulter la rubrique
-                <a href="#SavoirFaire">SAVOIR-FAIRE</a> !
-              </p>
+              <i class="bi bi-download"></i> Télécharger mon CV
+            </a>
+            <a href="#Realisations" class="btn-outline-custom">
+              <i class="bi bi-code-slash"></i> Voir mes projets
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/seydi-alioune-gueye" target="_blank" title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alioune-gueye-6427ab223/" target="_blank" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:aliounepape70@gmail.com" title="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a href="https://discord.com/channels/@me" target="_blank" title="Discord">
+              <i class="bi bi-discord"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#quiSuisJe"><i class="bi bi-chevron-double-down"></i></a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== ABOUT SECTION ===== -->
+      <section id="quiSuisJe" class="section-padding">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>À <span class="accent">propos</span></h2>
+            <div class="section-line"></div>
+            <p>Découvrez mon parcours et mes ambitions</p>
+          </div>
+          <div class="row align-items-center gy-5">
+            <div
+              class="col-lg-7"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
+              <div class="about-text">
+                <p>
+                  Bonjour, je me nomme <strong>Alioune Gueye</strong>, je suis
+                  actuellement étudiant en <strong>Master 1 Informatique</strong> à l'<a
+                    href="https://www.uha.fr/fr/index.html"
+                    target="_blank"
+                    >Université Haute-Alsace de Mulhouse</a
+                  >. Passionné par la programmation Web, Mobile et Logicielle,
+                  je me suis consacré à l'apprentissage de plusieurs
+                  technologies afin de me préparer à toutes les éventualités au
+                  cours de mon parcours scolaire et professionnel.
+                </p>
+                <p>
+                  Aspirant à devenir <strong>Développeur Full-Stack</strong>, je
+                  me forme activement sur le Front-End, le Back-End, les Bases de
+                  Données, le DevOps (Docker, AWS), les Outils de Développement,
+                  la Sécurité, les API REST et l'architecture logicielle. J'ai
+                  également une expérience en conception UI/UX avec Figma et en
+                  SEO technique.
+                </p>
+                <p>
+                  Rigoureux dans le travail, je combine ma passion pour le
+                  développement avec une veille technologique constante et une
+                  pratique sportive en tant que
+                  <strong>footballeur semi-professionnel</strong>.
+                </p>
+              </div>
+              <div class="about-highlight">
+                <i class="bi bi-translate" style="color: var(--accent)"></i>
+                <strong>Langues :</strong> Français (natif), Anglais (B2)
+                &nbsp;|&nbsp;
+                <a href="#SavoirFaire">Découvrir mes compétences techniques</a>
+              </div>
             </div>
             <div
-              class="col-12 col-lg-5 offset-lg-1 aboutphotoAbout"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-easing="ease-in-out"
+              class="col-lg-5 about-image"
+              data-aos="fade-left"
+              data-aos-duration="800"
             >
               <img
                 src="../images/6463428-removebg-preview.png"
-                class="img-fluid w-100 h-100"
-                alt="photoAbout"
+                class="img-fluid"
+                alt="Illustration développeur"
               />
             </div>
           </div>
         </div>
       </section>
-      <section id="SavoirFaire">
-        <h2 class="quiSuisJe" data-aos="zoom-in-up">SAVOIR - FAIRE</h2>
-        <div class="container my-4">
-          <div class="row my-4">
-            <div
-              class="col-12 col-lg-5"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-easing="ease-in-out"
-            >
-              <div class="row r1">
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-html-5-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+
+      <!-- ===== PARCOURS (FORMATION) SECTION ===== -->
+      <section id="Parcours" class="section-padding">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Mon <span class="accent">parcours</span></h2>
+            <div class="section-line"></div>
+            <p>Mes formations académiques</p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-duration="600">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">2025 - En cours</span>
+                    <h5>Master Informatique</h5>
+                    <p class="timeline-place">
+                      <i class="bi bi-geo-alt-fill"></i>
+                      Université Haute-Alsace, Mulhouse
+                    </p>
+                    <p class="timeline-desc">
+                      Approfondissement en architecture logicielle, DevOps,
+                      sécurité informatique et développement avancé.
+                    </p>
+                    <a
+                    href="https://formations.uha.fr/fr/catalogue-des-formations-1/master-M/master-informatique-L48B6CNY/master-informatique-parcours-informatique-et-mobilite-L48B6CSW.html"
+                    target="_blank"
+                    >En savoir plus</a>
+                  </div>
                 </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-css-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-javascript-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-php-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="row my-4">
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-react-native-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-nœud-js-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-logo-java-coffee-cup-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-studio-android-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                <div class="timeline-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">2023 - 2025</span>
+                    <h5>Licence Informatique</h5>
+                    <p class="timeline-place">
+                      <i class="bi bi-geo-alt-fill"></i>
+                      Université Haute-Alsace, Mulhouse
+                    </p>
+                    <p class="timeline-desc">
+                      Formation complète en programmation, algorithmique, bases de
+                      données, réseaux et développement Web/Mobile.
+                    </p>
+                    <a
+                    href="https://formations.uha.fr/fr/catalogue-des-formations-1/licence-L/licence-informatique-L128OZ61/licence-informatique-parcours-informatique-L128OZI1.html"
+                    target="_blank"
+                    >En savoir plus</a>
+                  </div>
                 </div>
               </div>
-              <div class="row my-4">
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-c-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-programmation-en-c-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-mongo-db-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-mysql-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="row my-4">
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-figma-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-qt-50.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-bootstrap-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-logo-de-printemps-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="row my-4">
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-r-projet-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-powershell-ise-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-python-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-git-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="row my-4">
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-npm-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-tailwind-css-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-express-js-40.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../images/icons8-laravel-48.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-12 col-lg-6 offset-lg-1 savoir"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-easing="ease-in-out"
-            >
-              <p class="fs-6 fs-lg-5">
-                Comme vous pouvez le constater, grâce à ces compétences, j'ai
-                travaillé sur toutes les parties d'une application, de la
-                conception à la maintenance. Aujourd'hui, nous assistons à la
-                naissance de
-                <span class="enum">frameworks, de SASS, de ChatGPT, etc.,</span>
-                dans le but de simplifier le quotidien des développeurs.
-              </p>
-              <p class="fs-6 fs-lg-5">
-                Il faut noter qu'il est nécessaire d'être à l'aise avec des
-                langages de base comme HTML, CSS, JavaScript, etc., parmi tant
-                d'autres pour s'épanouir avec ces nouvelles avancées
-                technologiques.
-              </p>
-              <p class="fs-6 fs-lg-5">
-                Je m'explique, prenons l'exemple de
-                <span class="enum">Bootstrap</span> : pour pouvoir le manier, il
-                faut au moins avoir des bases en HTML et CSS. C'est également le
-                cas de JavaScript pour
-                <span class="enum">React, Node, et Vue</span>, ainsi que de Java
-                pour <span class="enum">Spring Boot</span>, etc.
-              </p>
             </div>
           </div>
         </div>
       </section>
-      <section id="Realisations">
-        <h2 class="quiSuisJe" data-aos="zoom-in-up">REALISATIONS</h2>
-        <div class="container my-4">
-          <div class="row gy-4 my-5">
+
+      <!-- ===== SKILLS SECTION ===== -->
+      <section id="SavoirFaire" class="section-padding">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Mes <span class="accent">compétences</span></h2>
+            <div class="section-line"></div>
+            <p>Les technologies que je maîtrise au quotidien</p>
+          </div>
+          <!-- Langages -->
+          <div class="skills-category" data-aos="fade-up" data-aos-duration="600">
+            <h4 class="skills-category-title"><i class="bi bi-code-slash"></i> Langages</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <img src="../images/icons8-python-48.png" alt="Python" />
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-programmation-en-c-48.png" alt="C++" />
+                <span>C</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-javascript-48.png" alt="JavaScript" />
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+                <span>TypeScript</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-logo-java-coffee-cup-48.png" alt="Java" />
+                <span>Java</span>
+              </div>
+              <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />
+                <span>C#</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-php-48.png" alt="PHP" />
+                <span>PHP</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-c-48.png" alt="C" />
+                <span>C++</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Front-End -->
+          <div class="skills-category" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <h4 class="skills-category-title"><i class="bi bi-palette"></i> Front-End</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <img src="../images/icons8-html-5-48.png" alt="HTML5" />
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-css-48.png" alt="CSS3" />
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-react-native-48.png" alt="React" />
+                <span>React</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-bootstrap-48.png" alt="Bootstrap" />
+                <span>Bootstrap</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-tailwind-css-48.png" alt="Tailwind" />
+                <span>Tailwind</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Back-End -->
+          <div class="skills-category" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            <h4 class="skills-category-title"><i class="bi bi-server"></i> Back-End</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <img src="../images/icons8-nœud-js-48.png" alt="Node.js" />
+                <span>Node.js</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-express-js-40.png" alt="Express" />
+                <span>Express.js</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-logo-de-printemps-48.png" alt="Spring Boot" />
+                <span>Spring Boot</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-laravel-48.png" alt="Laravel" />
+                <span>Laravel</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-mongo-db-48.png" alt="MongoDB" />
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-mysql-48.png" alt="MySQL" />
+                <span>MySQL</span>
+              </div>
+              <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outils & DevOps -->
+          <div class="skills-category" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+            <h4 class="skills-category-title"><i class="bi bi-gear"></i> Outils & DevOps</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <img src="../images/icons8-git-48.png" alt="Git" />
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                <span>GitHub</span>
+              </div>
+              <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+                <span>Docker</span>
+              </div>
+              <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" />
+                <span>AWS</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-npm-48.png" alt="NPM" />
+                <span>NPM</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-figma-48.png" alt="Figma" />
+                <span>Figma</span>
+              </div>
+              <div class="skill-item">
+                <img src="../images/icons8-qt-50.png" alt="Qt" />
+                <span>Qt</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Concepts -->
+          <div class="skills-category" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+            <h4 class="skills-category-title"><i class="bi bi-lightbulb"></i> Concepts</h4>
+            <div class="skills-concepts">
+              <span class="concept-tag">API REST</span>
+              <span class="concept-tag">SEO technique</span>
+              <span class="concept-tag">UX/UI Design</span>
+              <span class="concept-tag">Architecture logicielle</span>
+              <span class="concept-tag">Méthodologies Agiles</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== EXPERIENCE SECTION ===== -->
+      <section id="Experience" class="section-padding">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Mon <span class="accent">expérience</span></h2>
+            <div class="section-line"></div>
+            <p>Mes expériences professionnelles</p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-duration="600">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">Janvier 2026 - Présent</span>
+                    <h5>Ingénieur logiciel (Freelance)</h5>
+                    <p class="timeline-place">
+                      <i class="bi bi-building"></i>
+                      Voici Voilà - Remote (États-Unis)
+                    </p>
+                    <p class="timeline-desc">
+                     1.Maintenance et évolution fonctionnelle de la plateforme web.
+                    <br> 2.Optimisation du référencement naturel (SEO technique et structurel).
+                    <br> 3.Intégration et déploiement de nouvelles fonctionnalités selon les
+                     besoins métier.
+                    </p>
+                    <a href="https://voilavoici.com/" target="_blank">En savoir plus</a>
+                  </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">Mai - Septembre 2025</span>
+                    <h5>Développeur Full-Stack (Stage)</h5>
+                    <p class="timeline-place">
+                      <i class="bi bi-building"></i>
+                        AUGUSTIN RUINARD GROUPE - Évry-Courcouronnes, Île-de-France
+                    </p>
+                    <p class="timeline-desc">
+                       Conception et développement d’un intranet pour la gestion des cours de soutien scolaire. <br>
+                       1.Conception des maquettes UI de la plateforme sur Figma.
+                       <br>2.Développement de plugins WordPress sur mesure.
+                       <br>3.Rédaction de la documentation technique et des guides utilisateurs.
+                       <br>4.Création et intégration des interfaces avec Elementor Pro et
+                       optimisation UX avec Kadence Pro.
+                        <br>5.Mise en place d’une messagerie interne pour faciliter la
+  communication entre les utilisateurs.
+                        <br>6.Participation aux tests fonctionnels et à la validation des modules.
+                    </p>
+                      <a href="https://cours-augustin.com/" target="_blank">En savoir plus</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS SECTION ===== -->
+      <section id="Realisations" class="section-padding">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Mes <span class="accent">réalisations</span></h2>
+            <div class="section-line"></div>
+            <p>Découvrez les projets sur lesquels j'ai travaillé</p>
+          </div>
+          <div class="row g-4">
+            <!-- Projet Coach Platform (nouveau, du CV) -->
             <div
-              class="col-12 col-sm-5 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
+              class="col-sm-6 col-lg-4"
               data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-easing="ease-in-out"
+              data-aos-duration="600"
             >
-              <div
-                class="card mx-auto transform-none card1"
-                style="width: 15rem"
-              >
-                <img src="../images/1.png" class="card-img-top im4" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Base de Données</h5>
-                  <p class="card-text">
-                    Gestion des vacataires de l'Université Haute-Alsace
-                  </p>
+              <div class="project-card">
+                <div class="project-card-image">
+                  <!-- Image placeholder - à remplacer -->
+                  <img src="../images/CoachSportif.png" alt="Plateforme Coach" />
+                  <span class="project-card-badge">Plateforme SaaS</span>
+                </div>
+                <div class="project-card-body">
+                  <h5>Gestion pour coachs sportifs</h5>
+                  <p>Plateforme complète de gestion pour coachs sportifs avec paiement Stripe</p>
                   <a
-                    class="btn plus"
+                    class="btn-project"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#projet6"
+                  >
+                    En savoir plus <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projet Python IA (nouveau, du CV) -->
+            <div
+              class="col-sm-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="50"
+            >
+              <div class="project-card">
+                <div class="project-card-image">
+                  <!-- Image placeholder - à remplacer -->
+                  <img src="../images/NVDA_Logo.png" alt="Application IA" />
+                  <span class="project-card-badge">Intelligence Artificielle</span>
+                </div>
+                <div class="project-card-body">
+                  <h5> Lecteur d’images pour personnes malvoyantes</h5>
+                  <p>Application de reconnaissance visuelle avec API IA et interface Tkinter</p>
+                  <a
+                    class="btn-project"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#projet7"
+                  >
+                    En savoir plus <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img src="../images/1.png" alt="Base de Données" />
+                  <span class="project-card-badge">Base de Données</span>
+                </div>
+                <div class="project-card-body">
+                  <h5>Gestion des vacataires</h5>
+                  <p>Gestion des vacataires de l'Université Haute-Alsace</p>
+                  <a
+                    class="btn-project"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#projet1"
-                    >En savoir plus...</a
                   >
+                    En savoir plus <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
             <div
-              class="col-12 col-sm-5 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
+              class="col-sm-6 col-lg-4"
               data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-easing="ease-in-out"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
-              <div
-                class="card mx-auto mx-sm-5 mx-lg-0 transform-none card2"
-                style="width: 15rem"
-              >
-                <img
-                  src="../images/Capture d’écran (45).png"
-                  class="card-img-top im1"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Site Web</h5>
-                  <p class="card-text">
-                    Gestion de l'Université Iba Der Thiam de Thiès
-                  </p>
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img src="../images/Capture d’écran (41).png" alt="Site Web" />
+                  <span class="project-card-badge">Site Web</span>
+                </div>
+                <div class="project-card-body">
+                  <h5>Université Iba Der Thiam</h5>
+                  <p>Gestion de l'Université Iba Der Thiam de Thiès</p>
                   <a
-                    class="btn plus"
+                    class="btn-project"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#projet2"
-                    >En savoir plus...</a
                   >
+                    En savoir plus <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
             <div
-              class="col-12 col-sm-5 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
+              class="col-sm-6 col-lg-4"
               data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-easing="ease-in-out"
+              data-aos-duration="600"
+              data-aos-delay="200"
             >
-              <div
-                class="card mx-auto mx-lg-0 mx-xxl-0 card3"
-                style="width: 15rem"
-              >
-                <img
-                  src="../images/Capture d’écran (46).png"
-                  class="card-img-top im2"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Application</h5>
-                  <p class="card-text">
-                    Projet Algorithmique (Solutions mathématiques)
-                  </p>
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img src="../images/Capture d’écran (46).png" alt="Application" />
+                  <span class="project-card-badge">Application</span>
+                </div>
+                <div class="project-card-body">
+                  <h5>Solutions mathématiques</h5>
+                  <p>Projet Algorithmique (Solutions mathématiques)</p>
                   <a
-                    class="btn plus"
+                    class="btn-project"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#projet3"
-                    >En savoir plus...</a
                   >
+                    En savoir plus <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
             <div
-              class="col-12 col-sm-5 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
+              class="col-sm-6 col-lg-4"
               data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-easing="ease-in-out"
+              data-aos-duration="600"
+              data-aos-delay="300"
             >
-              <div
-                class="card mx-auto mx-sm-5 mx-lg-4 mx-xl-0 mx-xxl-0 card4"
-                style="width: 15rem"
-              >
-                <img
-                  src="../images/Capture d’écran ptojet.png"
-                  class="card-img-top im3"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Logiciel</h5>
-                  <p class="card-text">Gestion d'un réseau de Tramways</p>
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img src="../images/Capture d’écran ptojet.png" alt="Logiciel" />
+                  <span class="project-card-badge">Logiciel</span>
+                </div>
+                <div class="project-card-body">
+                  <h5>Réseau de Tramways</h5>
+                  <p>Gestion d'un réseau de Tramways</p>
                   <a
-                    class="btn plus"
+                    class="btn-project"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#projet4"
-                    >En savoir plus...</a
                   >
+                    En savoir plus <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
             <div
-              class="col-12 col-sm-5 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
+              class="col-sm-6 col-lg-4"
               data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-easing="ease-in-out"
+              data-aos-duration="600"
+              data-aos-delay="400"
             >
-              <div
-                class="card mx-auto transform-none card1"
-                style="width: 15rem"
-              >
-                <img
-                  src="../images/Capture d’écran (51).png"
-                  class="card-img-top im5"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Plateforme (En cours)</h5>
-                  <p class="card-text">Gestion de Liens</p>
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img src="../images/Capture d’écran (51).png" alt="Plateforme" />
+                  <span class="project-card-badge">Plateforme</span>
+                </div>
+                <div class="project-card-body">
+                  <h5>Gestion de Liens</h5>
+                  <p>Plateforme de gestion et stockage de liens (En cours)</p>
                   <a
-                    class="btn plus"
+                    class="btn-project"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#projet5"
-                    >En savoir plus...</a
                   >
+                    En savoir plus <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projet Véhicules communicants -->
+            <div
+              class="col-sm-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="500"
+            >
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img src="../images/V2V.jpg" alt="Véhicules communicants" />
+                  <span class="project-card-badge">Logiciel</span>
+                </div>
+                <div class="project-card-body">
+                  <h5>Véhicules communicants</h5>
+                  <p>Simulation de 2000+ véhicules avec graphe d'interférences réseau</p>
+                  <a
+                    class="btn-project"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#projet8"
+                  >
+                    En savoir plus <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projet Qualité de programmation -->
+            <div
+              class="col-sm-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="600"
+            >
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img src="../images/Labyrinthe.jpg" alt="Robot Labyrinthe" />
+                  <span class="project-card-badge">Logiciel</span>
+                </div>
+                <div class="project-card-body">
+                  <h5>Robot Labyrinthe</h5>
+                  <p>Gestion des déplacements d'un robot dans un labyrinthe en C++</p>
+                  <a
+                    class="btn-project"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#projet9"
+                  >
+                    En savoir plus <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projet Pop Balloon -->
+            <div
+              class="col-sm-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="700"
+            >
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img src="../images/Hand holding big long needle to red balloon.jpg" alt="Pop Balloon" />
+                  <span class="project-card-badge">Jeu</span>
+                </div>
+                <div class="project-card-body">
+                  <h5>Pop Balloon</h5>
+                  <p>Jeu interactif avec détection de main par caméra</p>
+                  <a
+                    class="btn-project"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#projet10"
+                  >
+                    En savoir plus <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -946,9 +1046,9 @@
             <div class="row tech">
               <div class="col-12 fw-medium">
                 <h3>Technologies utilisées</h3>
-                <span class="rounded">Code::Blocks</span>
-                <span class="rounded">Langage C++</span>
-                <span class="rounded">Qt Creator</span>
+                <span class="rounded">C++17</span>
+                <span class="rounded">Qt</span>
+                <span class="rounded">OSM</span>
                 <span class="rounded">XML</span>
               </div>
             </div>
@@ -1047,110 +1147,471 @@
           </div>
         </div>
         <!--FinProjet 5-->
+        <!--DébutProjet 6 - Coach Platform-->
+        <div
+          class="offcanvas offcanvas-end w-100"
+          tabindex="-1"
+          id="projet6"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title text-center" id="offcanvasRightLabel">
+              Plateforme de gestion pour coachs sportifs
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row gy-2">
+              <div class="col-xl-6">
+                <img
+                  src="../images/ConnexionCoachApp.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-6">
+                <img
+                  src="../images/InscriptionCoachApp.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="fonctionnalités col-12">
+                <p class="fw-bold">
+                  Ce projet a pour objectif de concevoir une plateforme SaaS
+                  permettant de :
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Gérer les clients, les séances et les programmes sportifs des coachs
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Intégrer un système de paiement en ligne via Stripe
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Concevoir les maquettes UI de la plateforme sur Figma
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Déployer l'application avec Docker et AWS
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Sécuriser l'authentification avec JWT
+                </p>
+              </div>
+            </div>
+            <div class="row tech">
+              <div class="col-12 fw-medium">
+                <h3>Technologies utilisées</h3>
+                <span class="rounded">React.js</span>
+                <span class="rounded">TypeScript</span>
+                <span class="rounded">Node.js</span>
+                <span class="rounded">Express.js</span>
+                <span class="rounded">PostgreSQL</span>
+                <span class="rounded">Prisma</span>
+                <span class="rounded">Stripe</span>
+                <span class="rounded">Docker</span>
+                <span class="rounded">AWS</span>
+                <span class="rounded">JWT</span>
+                <span class="rounded">Figma</span>
+              </div>
+            </div>
+            <div class="row tech my-2">
+              <div class="col-12 fw-bold">
+                <a
+                  href="https://github.com/seydi-alioune-gueye?tab=repositories"
+                  target="_blank"
+                  class="btn btn-dark w-100"
+                ><i class="bi bi-github"></i> Voir sur GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FinProjet 6-->
+        <!--DébutProjet 7 - Python IA-->
+        <div
+          class="offcanvas offcanvas-end w-100"
+          tabindex="-1"
+          id="projet7"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title text-center" id="offcanvasRightLabel">
+              Lecteur d’images pour personnes malvoyantes
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row gy-2">
+              <div class="col-12">
+                <div class="ratio ratio-16x9">
+                <video controls>
+                  <source src="../images/Projet IHM .mp4" type="video/mp4">
+                  Votre navigateur ne supporte pas la vidéo HTML5.
+                </video>
+              </div>
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="fonctionnalités col-12">
+                <p class="fw-bold">
+                  Ce projet a pour objectif de concevoir une application
+                  permettant de :
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Utiliser une API d'intelligence artificielle pour la reconnaissance visuelle
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Créer une interface graphique conviviale avec Tkinter
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Analyser et traiter des images en temps réel
+                </p>
+              </div>
+            </div>
+            <div class="row tech">
+              <div class="col-12 fw-medium">
+                <h3>Technologies utilisées</h3>
+                <span class="rounded">Python</span>
+                <span class="rounded">Tkinter</span>
+                <span class="rounded">API IA Vision</span>
+              </div>
+            </div>
+            <div class="row tech my-2">
+              <div class="col-12 fw-bold">
+                <a
+                  href="https://drive.google.com/drive/folders/1ZdTpBUJ1ys4rhzJYUlrcvsFS2980Bok1"
+                  target="_blank"
+                  class="btn btn-dark w-100"
+                >Voir Code Source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FinProjet 7-->
+        <!--DébutProjet 8 - Véhicules communicants-->
+        <div
+          class="offcanvas offcanvas-end w-100"
+          tabindex="-1"
+          id="projet8"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title text-center" id="offcanvasRightLabel">
+              Simulation de véhicules communicants
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row gy-2">
+              <div class="col-12">
+                 <div class="ratio ratio-16x9">
+                <video controls>
+                  <source src="../images/qtcreator_iH9FXEYFxC.mp4" type="video/mp4">
+                  Votre navigateur ne supporte pas la vidéo HTML5.
+                </video>
+              </div>
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="fonctionnalités col-12">
+                <p class="fw-bold">
+                  Simulation de véhicules communicants :
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Développement d'une application simulant les déplacements de plus de 2000 véhicules communicants
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Génération d'un graphe dynamique d'interférences réseau
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Visualisation cartographique interactive basée sur OpenStreetMap
+                </p>
+              </div>
+            </div>
+            <div class="row tech">
+              <div class="col-12 fw-medium">
+                <h3>Technologies utilisées</h3>
+                <span class="rounded">C++17</span>
+                <span class="rounded">Qt</span>
+                <span class="rounded">OpenStreetMap</span>
+                <span class="rounded">XML</span>
+              </div>
+            </div>
+            <div class="row tech my-2">
+              <div class="col-12 fw-bold">
+                <a
+                  href="https://github.com/seydi-alioune-gueye/-Simulation-de-connexions-V2V-"
+                  target="_blank"
+                  class="btn btn-dark w-100"
+                ><i class="bi bi-github"></i> Voir sur GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FinProjet 8-->
+        <!--DébutProjet 9 - Robot Labyrinthe-->
+        <div
+          class="offcanvas offcanvas-end w-100"
+          tabindex="-1"
+          id="projet9"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title text-center" id="offcanvasRightLabel">
+              Qualité de programmation — Robot Labyrinthe
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row gy-2">
+              <div class="col-12">
+                <img
+                  src="../images/Lab.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                </div>
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="fonctionnalités col-12">
+                <p class="fw-bold">
+                  Qualité de programmation :
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Conception d'un programme en C++ pour gérer les déplacements d'un robot dans un labyrinthe
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Mise en œuvre de bonnes pratiques de programmation et de qualité de code
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Algorithmes de parcours et résolution de labyrinthes
+                </p>
+              </div>
+            </div>
+            <div class="row tech">
+              <div class="col-12 fw-medium">
+                <h3>Technologies utilisées</h3>
+                <span class="rounded">C++</span>
+              </div>
+            </div>
+            <div class="row tech my-2">
+              <div class="col-12 fw-bold">
+                <a
+                  href="https://github.com/seydi-alioune-gueye?tab=repositories"
+                  target="_blank"
+                  class="btn btn-dark w-100"
+                ><i class="bi bi-github"></i> Voir sur GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FinProjet 9-->
+        <!--DébutProjet 10 - Pop Balloon-->
+        <div
+          class="offcanvas offcanvas-end w-100"
+          tabindex="-1"
+          id="projet10"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title text-center" id="offcanvasRightLabel">
+              Pop Balloon — Jeu interactif
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row gy-2">
+              <div class="col-12">
+                <div class="ratio ratio-16x9">
+                <video controls>
+                  <source src="../images/Pop Balloon.mp4" type="video/mp4">
+                  Votre navigateur ne supporte pas la vidéo HTML5.
+                </video>
+              </div>
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="fonctionnalités col-12">
+                <p class="fw-bold">
+                  Pop Balloon — Un jeu interactif où vous éclatez des ballons avec votre main grâce à la détection par caméra :
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Contrôle par la main via webcam grâce à MediaPipe (IA Google)
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Système de score avec combos et timer circulaire
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Effets visuels : particules, animations, fond dégradé avec nuages animés
+                </p>
+                <p>
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                  Suivi du meilleur score et algorithme de lissage (One Euro Filter)
+                </p>
+              </div>
+            </div>
+            <div class="row tech">
+              <div class="col-12 fw-medium">
+                <h3>Technologies utilisées</h3>
+                <span class="rounded">Python</span>
+                <span class="rounded">Pygame</span>
+                <span class="rounded">OpenCV</span>
+                <span class="rounded">MediaPipe</span>
+              </div>
+            </div>
+            <div class="row tech my-2">
+              <div class="col-12 fw-bold">
+                <a
+                  href="https://drive.google.com/drive/folders/1RoWA7j3khxWjerTemIg7WBjUtieyiB32"
+                  target="_blank"
+                  class="btn btn-dark w-100"
+                >Voir Code Source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FinProjet 10-->
       </section>
     </main>
+
+    <!-- ===== CONTACT / FOOTER ===== -->
     <footer id="Contact">
-      <div class="container h-100">
-        <div class="row">
-          <div class="col-12 col-lg-6 offset-lg-6">
-            <div class="row coordonnées1">
-              <div
-                class="col-3 my-5 Contact"
-                data-aos="zoom-in-up"
-                data-aos-duration="1000"
-                data-aos-delay="500"
-                data-aos-anchor-placement="bottom-bottom"
-                data-aos-easing="ease-in-out"
-              >
-                Contact
-              </div>
-              <p
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-anchor-placement="bottom-bottom"
-                data-aos-easing="ease-in-out"
-              >
+      <div class="container">
+        <div class="contact-card" data-aos="fade-up" data-aos-duration="800">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-6">
+              <h2 class="contact-title">
+                Travaillons <span class="accent">ensemble</span>
+              </h2>
+              <p class="contact-desc">
                 Je serais ravi de collaborer avec vous afin de relever de
-                nouveaux défis et de monter en compétences et en expérience. À
-                bientôt <i class="bi bi-emoji-smile-fill"></i>
+                nouveaux défis et de monter en compétences et en expérience.
+                N'hésitez pas à me contacter !
               </p>
-              <div
-                class="col-4 my-3 cv"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-anchor-placement="bottom-bottom"
-                data-aos-easing="ease-in-out"
+              <a
+                href="https://drive.google.com/file/d/113L99k-mcUeNcWFI_iPa3IVIEW3epdU9/view?usp=sharing"
+                target="_blank"
+                class="btn-cv"
               >
-                <span id="send">Téléchargez mon CV</span>
-                <button class="buttonCv w-10 mx-3">
-                  <a
-                    class="ClickHere"
-                    href="https://drive.google.com/file/d/1z80XX-2Ar3KAEx6PKwxNwXtf5eMeM0za/view?usp=drive_link"
-                    target="_blank"
-                    >Click here !</a
-                  >
-                </button>
+                <i class="bi bi-download"></i> Télécharger mon CV
+              </a>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              <div class="contact-info-item">
+                <i class="bi bi-phone-fill"></i>
+                <div>
+                  <div class="label">Téléphone</div>
+                  <div class="value">07 57 54 81 25</div>
+                </div>
               </div>
-              <div
-                class="col-4 coordonnées2 my-3"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-anchor-placement="bottom-bottom"
-                data-aos-easing="ease-in-out"
-              >
-                <p class="fs-6 fs-lg-5">
-                  <i class="bi bi-phone-fill"></i> Téléphone : 07 57 54 81 25
-                </p>
-                <p class="fs-6 fs-lg-5">
-                  <i class="bi bi-envelope"></i> Mail : aliounepape70@gmail.com
-                </p>
-                <p class="fs-6 fs-lg-5">
-                  <i class="bi bi-geo-fill"></i>
-                  Adresse : Mulhouse, Grand Est, France
-                </p>
+              <div class="contact-info-item">
+                <i class="bi bi-envelope-fill"></i>
+                <div>
+                  <div class="label">Email</div>
+                  <div class="value">aliounepape70@gmail.com</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <div class="label">Localisation</div>
+                  <div class="value">Mulhouse, Grand Est, France</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <p class="footer-copyright mb-0">
+                &copy; 2026 Alioune GUEYE. Tous droits réservés.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-links">
+                <a href="https://github.com/seydi-alioune-gueye" target="_blank" title="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/alioune-gueye-6427ab223/" target="_blank" title="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="mailto:aliounepape70@gmail.com" title="Email">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a href="https://discord.com/channels/@me" target="_blank" title="Discord">
+                  <i class="bi bi-discord"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row all my-4 h-10">
-          <div
-            class="col-12 col-lg-9 my-4 fs-6 fs-lg-5 text-center text-lg-start"
-          >
-            © Alioune GUEYE 2024 | All rights reserved.
-          </div>
-          <div class="col-12 col-lg-3 my-lg-4 link">
-            <a href="https://github.com/seydi-alioune-gueye" target="_blank"
-              ><i class="bi bi-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/alioune-gueye-6427ab223/"
-              target="_blank"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-            <a href="mailto:aliounepape70@gmail.com"
-              ><i class="bi bi-envelope"></i
-            ></a>
-
-            <a href="https://discord.com/channels/@me" target="_blank"
-              ><i class="bi bi-discord"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"
-      ></script>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Custom cursor -->
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../JavaScript/cursor.js" defer></script>
+    <script src="../JavaScript/main.js" defer></script>
   </body>
 </html>
